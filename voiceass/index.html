@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Voice API</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <input type="text" placeholder="Enter the name of any CF handle here"/>
+
+  <div id="submitButton"> Speak</div>
+<script>
+    document.getElementById("submitButton").addEventListener("click", ()=>{
+        alert("Your data was submitted successfully , stay tuned for notifications!");
+        formdata = document.querySelector("input").value;
+        document.querySelector("input").value = null;
+        console.log(formdata);
+        fetch(`http://localhost:8000/index/${formdata}`, {
+          mode: 'cors',
+          method: "GET",
+          headers: {"Content-type": "text/html; charset=UTF-8"}
+        })
+        .then(response => response.text())
+        .then(data => console.log(data))
+        .catch(err => console.log(err));
+    });
+
+</script>
+</body>
+</html>

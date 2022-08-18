@@ -1,0 +1,184 @@
+body {
+	background: #181927;
+	
+}
+
+body * {
+	font-family: sans-serif;
+}
+
+.icon{
+	position: absolute;	
+	left: 850px;
+	top: 250px;
+	bottom:45 px;
+	margin:auto;
+	height:68px;
+	width:65px;
+	color: blue;
+	background: white;
+}
+
+.typewriter h1 {
+	overflow: hidden;
+	border-right: .20em solid rgba(0, 255, 10, 0.9);
+	white-space: nowrap;
+	margin: 0 auto; 
+	letter-spacing: .15em; 
+	animation: 
+	  typing 1.5s steps(40, end),
+	  blink-caret 1s step-end infinite;
+  }
+
+  .landing h1{
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto; 
+	letter-spacing: .15em; 
+	animation: 
+	  typing 1.5s steps(40, end),
+	  blink-caret 1s step-end infinite;
+  }
+
+  
+  
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: rgba(0, 255, 10, 0.9); }
+  }
+  
+
+input, div{
+	position: absolute;
+	margin: auto;
+	height: 50px;
+	width: 70%;
+	max-width: 30pc; 
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 50px;
+	background: #1F2134;
+	outline: none;
+	border: 0;
+	padding: 10px 20px;
+	border-radius: 7px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family:'Comic Sans MS';
+	color: #41FF8D;
+}
+
+
+div {
+	height: fit-content;
+	width: fit-content;
+	margin-left:auto;
+	bottom: -120px;
+	color: #1F2134;
+	background: #41FF8D;
+	cursor: pointer;
+}
+
+div:hover {
+	background: rgba(65, 255, 141, 0.5);
+
+}
+
+
+div.typewriter{
+	height: fit-content;
+	width: fit-content;
+	top : 100px;
+	bottom: 0;
+	max-width:70pc;
+	background:rgba(0,0,0,0);
+	color: rgba(0, 255, 10, 0.9);
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	margin-left:315px;
+	margin-top:50px;
+}
+
+div.landing{
+	height: fit-content;
+	width: fit-content;
+	top : 100px;
+	bottom: 0;
+	max-width:70pc;
+	background:rgba(0,0,0,0);
+	color: rgba(255, 255, 0, 0.9);
+	cursor: pointer;
+	margin-left:315px;
+	margin-top:50px;
+}
+
+
+input::placeholder {
+	color: rgba(65, 255, 141, 0.5);
+}
+
+div.cache-button{
+	background:rgba(255,255,255,0.9);
+	justify-content: center;
+	align-items:center;
+	margin-right:110px;
+	margin-bottom:180px;
+	color: rgba(0,0,255,0.6);
+	cursor:pointer;
+}
+
+div.cache-button:hover{
+	background: #A9A9A9;
+}
+
+
+ul{
+	display:none;
+	position: absolute;
+	list-style-type: none;
+	margin: auto;
+	height: 100px;
+	width: 29pc;
+	max-width: 32pc; 
+	right: 0;
+	left: 0;
+	top: 320px;
+	background: #1F2134;
+	outline: none;
+	border: 0;
+	border-radius: 7px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family:'Comic Sans MS';
+	color: #41FF8D;
+	padding: 10px 35px 25px 25px;
+	border: 1px solid #CCC;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: black;
+  }
+  
+  li:hover{
+	background: rgba(65, 255, 141, 0.5);
+  }
+
+
+  select::-ms-expand {
+	  display: none; 
+  }
+  
+
+  @media screen and (min-width:0\0) {
+	  select {
+		  background: none\9;
+		  padding: 5px\9;
+	  }
+  }
